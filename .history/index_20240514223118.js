@@ -14,7 +14,7 @@ console.log(url);
 fetch(url)
   .then((response) => {
     if (!response.ok) {
-      throw new Error("Failure to Load");
+      throw new Error("Request failed");
     }
     return response.json(); // Parse the response as JSON
   })
