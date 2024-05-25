@@ -22,17 +22,11 @@ body {
     font-weight: lighter;
   }
 
-  #artistTitleId {
-    color: slategray;
+  h4 {
+
     font-size: 20px;
     font-weight:lighter
-}
-
-.artistDates {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 5px; 
-}
+  }
   
   .container {
     max-width: 600px;
@@ -50,6 +44,8 @@ body {
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
+#
   
   .artwork-info {
     font-size: 16px;

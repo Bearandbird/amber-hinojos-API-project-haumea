@@ -1,38 +1,19 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #ffffff;
+    background-color: #fdfcf8;
     color:brown;
     text-align: center;
   }
 
   h1 {
     color: brown;
-    font-size: 30px;
 
-  }
-
-  h2 {
-    font-size: 25px;
   }
 
   h3 {
-    color:slategrey;
-    font-style: italic;
-    font-size: 20px;
-    font-weight: lighter;
+    color: darkgreen;
+
   }
-
-  #artistTitleId {
-    color: slategray;
-    font-size: 20px;
-    font-weight:lighter
-}
-
-.artistDates {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 5px; 
-}
   
   .container {
     max-width: 600px;
