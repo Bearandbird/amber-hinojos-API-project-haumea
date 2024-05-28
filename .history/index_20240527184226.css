@@ -71,74 +71,14 @@ body {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: block; /* Change display to block */
+    display: inline-block;
     font-size: 16px;
-    margin: 20px auto; /* Set top and bottom margin to 20px, and left and right margins to auto */
+    margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
     transition-duration: 0.4s;
 }
 
-
 #reloadButton:hover {
     background-color: slategray 
-}
-
-/* Media query for small devices (e.g., phones) */
-@media only screen and (max-width: 600px) {
-    #reloadButton {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    /* Adjust other styles for small devices */
-    body {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    #artistTitleId {
-        font-size: 18px;
-    }
-
-    .artistDates {
-        font-size: 14px;
-    }
-
-    .container {
-        max-width: 100%; /* Adjust container width */
-        padding: 10px; /* Adjust padding */
-    }
-
-    img {
-        max-width: 100%; /* Adjust image width */
-        margin-bottom: 10px; /* Adjust margin */
-    }
-
-    .artwork-info {
-        font-size: 14px;
-    }
-
-    .error-message {
-        font-size: 14px;
-    }
-}
-
-/* Media query for tablets and larger devices */
-@media only screen and (min-width: 601px) {
-    #reloadButton {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
 }
