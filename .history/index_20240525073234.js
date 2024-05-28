@@ -27,10 +27,9 @@ fetch(url)
     console.log(artwork.title);
     const artistTitle = artwork.artist_title;
     console.log(artistTitle);
-    const artistId = artwork.artist_id; 
-      const artworkImageID = artwork.image_id;
+    const artistId = artwork.artist_id; // Assuming the artist ID is available
+    const artworkImageID = artwork.image_id;
     console.log(artworkImageID);
-  
 
     //Add the title to the html
     const artworkTitle = document.getElementById("artworkTitle");
@@ -54,7 +53,7 @@ fetch(url)
 
     console.log(artworkSrcString);
 
-    // Fetch artist birth and death date if available
+    // New Code: Fetch additional artist information if artistId is available
     if (artistId) {
       fetch(`https://api.artic.edu/api/v1/artists/${artistId}`)
         .then(response => {
@@ -68,11 +67,13 @@ fetch(url)
           const artist = artistData.data;
           const artistBirthDate = artist.birth_date;
           const artistDeathDate = artist.death_date;
+          const artistBio = artist.biography;
 
           const artistInfoElement = document.getElementById("artistInfo");
           artistInfoElement.innerHTML = `
             <p>Birth Date: ${artistBirthDate}</p>
             <p>Death Date: ${artistDeathDate}</p>
+            <p>Biography: ${artistBio}</p>
           `;
         })
         .catch(error => console.error('Error fetching artist info:', error));
