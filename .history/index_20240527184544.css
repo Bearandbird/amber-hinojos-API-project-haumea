@@ -71,14 +71,13 @@ body {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: block; /* Change display to block */
+    display: inline-block;
     font-size: 16px;
-    margin: 20px auto; /* Set top and bottom margin to 20px, and left and right margins to auto */
+    margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
     transition-duration: 0.4s;
 }
-
 
 #reloadButton:hover {
     background-color: slategray 
